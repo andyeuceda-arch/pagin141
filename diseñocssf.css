@@ -1,0 +1,121 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+
+#titulo1{
+    padding: 1px;
+    background-color: rgb(42,112,112);
+}
+#titulo1 h1{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+li a, .btndesplegable {
+display: inline-block;
+color: rgb(0,1,2);
+text-align: center;
+padding: 10px 16px;
+text-decoration: none;
+}
+li a:hover, .f-desplegable:hover .btndesplegable {
+    background-color: rgb(19,127,141);
+    color: white;
+}
+
+.cont-desplegable {
+    display: none;
+    position: absolute;
+    background-color: #f5f7f8;
+    min-width: 200px;
+
+
+    box-shadow: 0px 8px 16px 0px rgba(36,225,231,0.856);
+    z-index: 1;
+}
+
+.f-desplegable:hover .cont-desplegable{
+    display: block;
+}
+
+.cont-desplegable a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.cont-desplegable a:hover {
+    background-color: #d8d6d6;
+    color: rgb(3,47,68);
+}
+
+.seccion-form{
+    width: 100%; 
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center; 
+    padding: 0px 0px 10px 0px;
+}
+
+.s-encabezado{
+    width: 700px;
+    background-image: linear-gradient(#3b1804, #0c504a);
+    text-align: center;
+    padding: 0 20px;
+}
+
+form{
+    width: 700px;
+    padding: 20px;
+    line-height: 30px; 
+}
+
+#codnom, #cospor, #prefecha{
+    display: flex;
+    flex-wrap: wrap;
+}
+.codnom1{
+    flex:auto;
+}
+
+.campof{
+    padding: 6px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing:border-box;
+}
+
+input[type=submit]{
+    background-color: #05588f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+}
+
+input[type=submit]:hover {
+    background-color: #087179;
+}
+
+footer{
+    margin: auto;
+    height: 50px;
+    padding: 5px;
+}
+
+
+
